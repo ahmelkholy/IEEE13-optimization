@@ -1,0 +1,169 @@
+% This file was created by matlab2tikz.
+%
+\documentclass[tikz]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{amsmath}
+
+\begin{document}
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+\definecolor{mycolor4}{rgb}{0.49400,0.18400,0.55600}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+every outer x axis line/.append style={white!15!black},
+every x tick label/.append style={font=\color{white!15!black}},
+every x tick/.append style={white!15!black},
+xmin=0,
+xmax=25,
+xtick={0,5,10,15,20,25},
+xlabel style={font=\color{white!15!black}},
+xlabel={Hour},
+every outer y axis line/.append style={white!15!black},
+every y tick label/.append style={font=\color{white!15!black}},
+every y tick/.append style={white!15!black},
+ymin=0,
+ymax=140,
+ytick={0,20,40,60,80,100,120,140},
+ylabel style={font=\color{white!15!black}},
+ylabel={Power KW},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={the Power Losses},
+axis x line*=bottom,
+axis y line*=left,
+axis on top,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=mycolor1, line width=0.5pt]
+  table[row sep=crcr]{%
+1	6.72188321697849\\
+2	5.61860289982262\\
+3	5.61325325205891\\
+4	5.55641467701385\\
+5	5.70994948177087\\
+6	5.7446569552719\\
+7	7.18333533297603\\
+8	40.4788824140012\\
+9	43.2614338508403\\
+10	73.7733484319441\\
+11	120.649707269854\\
+12	18.1043925739208\\
+13	9.55529212969099\\
+14	5.73607864888509\\
+15	6.41590712594475\\
+16	10.9757135092944\\
+17	23.3955525517276\\
+18	37.7286847652348\\
+19	92.8574404222589\\
+20	22.051895676519\\
+21	34.3701979319811\\
+22	39.9923316912063\\
+23	53.9282956661942\\
+24	15.0722202198224\\
+};
+\addlegendentry{Base Case}
+
+\addplot [color=mycolor2, line width=0.5pt]
+  table[row sep=crcr]{%
+1	7.32004851732819\\
+2	6.05512738332375\\
+3	6.29232208631382\\
+4	6.17350391666751\\
+5	6.13536922077857\\
+6	6.38404911293284\\
+7	7.58747724837979\\
+8	40.1023000805668\\
+9	43.629742803971\\
+10	64.8750975036232\\
+11	96.9161194989586\\
+12	17.4170968859047\\
+13	10.6815015007147\\
+14	6.27020393415331\\
+15	7.13252511070314\\
+16	11.2373605913985\\
+17	22.678572721347\\
+18	35.6333545953102\\
+19	86.8392996919572\\
+20	21.7331587672685\\
+21	32.6816977230833\\
+22	38.0669913799724\\
+23	49.4579702666689\\
+24	16.0451372560399\\
+};
+\addlegendentry{SVC}
+
+\addplot [color=mycolor3, line width=0.5pt]
+  table[row sep=crcr]{%
+1	7.27200127139458\\
+2	6.16515727262957\\
+3	6.31524960027793\\
+4	6.18606981708529\\
+5	6.23586360469397\\
+6	6.3780095400851\\
+7	7.74137241895461\\
+8	39.7615464193496\\
+9	37.0732576653645\\
+10	48.6008745696314\\
+11	53.8181392991997\\
+12	14.7919261318149\\
+13	9.69085549301305\\
+14	6.44753349306782\\
+15	7.38499287915224\\
+16	11.4417811368181\\
+17	21.2412075938877\\
+18	32.1262191390485\\
+19	85.3370781089902\\
+20	20.6771651490372\\
+21	30.0880376859599\\
+22	34.7176260873406\\
+23	43.064885630812\\
+24	14.9617465770375\\
+};
+\addlegendentry{UPC}
+
+\addplot [color=mycolor4, line width=0.5pt]
+  table[row sep=crcr]{%
+1	6.36891221380283\\
+2	5.66334013155521\\
+3	5.55694783557432\\
+4	5.4874180103076\\
+5	5.75978559417231\\
+6	5.65852273809881\\
+7	7.16571109395143\\
+8	37.7757637195142\\
+9	34.4505270227765\\
+10	46.7216381550585\\
+11	51.4604981283621\\
+12	13.0738202392844\\
+13	7.66401273265302\\
+14	5.72086313215942\\
+15	6.36489783657594\\
+16	10.372819339858\\
+17	19.710880616269\\
+18	29.1098444312983\\
+19	72.8287936411446\\
+20	18.8046353266596\\
+21	27.4826149581619\\
+22	32.4509020328498\\
+23	40.2944498845786\\
+24	12.8951200248075\\
+};
+\addlegendentry{UPC-GA}
+
+\end{axis}
+\end{tikzpicture}%
+\end{document}

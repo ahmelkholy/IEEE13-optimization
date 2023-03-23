@@ -1,0 +1,169 @@
+% This file was created by matlab2tikz.
+%
+\documentclass[tikz]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{amsmath}
+
+\begin{document}
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+\definecolor{mycolor4}{rgb}{0.49400,0.18400,0.55600}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+every outer x axis line/.append style={white!15!black},
+every x tick label/.append style={font=\color{white!15!black}},
+every x tick/.append style={white!15!black},
+xmin=0,
+xmax=25,
+xtick={0,5,10,15,20,25},
+xlabel style={font=\color{white!15!black}},
+xlabel={Hour},
+every outer y axis line/.append style={white!15!black},
+every y tick label/.append style={font=\color{white!15!black}},
+every y tick/.append style={white!15!black},
+ymin=0,
+ymax=12,
+ytick={0,2,4,6,8,10,12},
+ylabel style={font=\color{white!15!black}},
+ylabel={$K_{Un}$},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={the overall objective function},
+axis x line*=bottom,
+axis y line*=left,
+axis on top,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=mycolor1, line width=0.5pt]
+  table[row sep=crcr]{%
+1	0.67581768902845\\
+2	0.603610356603794\\
+3	0.605233622372247\\
+4	0.58741856607662\\
+5	0.61103205110506\\
+6	0.612006452029962\\
+7	0.715616969457786\\
+8	3.93056217382433\\
+9	4.28420541398428\\
+10	7.20533638545909\\
+11	11.7488300357559\\
+12	1.83420011447607\\
+13	0.946525171756879\\
+14	0.607581007925952\\
+15	0.6457208881053\\
+16	1.16885378174535\\
+17	2.40096732583895\\
+18	3.81281883510127\\
+19	9.29672350997633\\
+20	2.25904341242729\\
+21	3.52990000465534\\
+22	4.00468694600606\\
+23	5.3796114820567\\
+24	1.56853707065493\\
+};
+\addlegendentry{Base Case}
+
+\addplot [color=mycolor2, line width=0.5pt]
+  table[row sep=crcr]{%
+1	0.737850306617116\\
+2	0.647612257826319\\
+3	0.675391301149922\\
+4	0.651399912161318\\
+5	0.653640593689278\\
+6	0.67846721497091\\
+7	0.752318660297043\\
+8	3.91197796412148\\
+9	4.33071974497145\\
+10	6.37912327895862\\
+11	9.45633758752242\\
+12	1.78232106195557\\
+13	1.06399948229416\\
+14	0.656629773134072\\
+15	0.716243618527831\\
+16	1.18808826550504\\
+17	2.32524104717512\\
+18	3.58163941041272\\
+19	8.69344690913025\\
+20	2.21182831676036\\
+21	3.34943595129261\\
+22	3.81693011861028\\
+23	4.94044695612822\\
+24	1.67040417299745\\
+};
+\addlegendentry{SVC}
+
+\addplot [color=mycolor3, line width=0.5pt]
+  table[row sep=crcr]{%
+1	0.729860583315661\\
+2	0.652412238409034\\
+3	0.674165337539165\\
+4	0.648694307934004\\
+5	0.658130618383786\\
+6	0.673727153399709\\
+7	0.773208703439233\\
+8	3.8644200393786\\
+9	3.59350650476451\\
+10	4.69260320535664\\
+11	5.24405375300617\\
+12	1.46039441195743\\
+13	0.956635852663089\\
+14	0.66821090354665\\
+15	0.729178193003456\\
+16	1.20012946144144\\
+17	2.16113141305522\\
+18	3.24017178163853\\
+19	8.55971478245838\\
+20	2.10561206564537\\
+21	3.08462177677223\\
+22	3.43475181520957\\
+23	4.24062996064802\\
+24	1.54967668814415\\
+};
+\addlegendentry{UPC}
+
+\addplot [color=mycolor4, line width=0.5pt]
+  table[row sep=crcr]{%
+1	0.635981713967575\\
+2	0.604290517260188\\
+3	0.599278443228756\\
+4	0.577130086251952\\
+5	0.609611704066426\\
+6	0.601773372436191\\
+7	0.715988573631264\\
+8	3.61431321049129\\
+9	3.29576213935329\\
+10	4.46403900503549\\
+11	4.93347218457513\\
+12	1.2654247996994\\
+13	0.749978690650613\\
+14	0.602309242927959\\
+15	0.636260024913277\\
+16	1.0723919656425\\
+17	1.95320745360524\\
+18	2.84476391444464\\
+19	7.21761801429428\\
+20	1.85688545251237\\
+21	2.75604644446\\
+22	3.14088969240027\\
+23	3.88873554246873\\
+24	1.30241996730295\\
+};
+\addlegendentry{UPC-GA}
+
+\end{axis}
+\end{tikzpicture}%
+\end{document}

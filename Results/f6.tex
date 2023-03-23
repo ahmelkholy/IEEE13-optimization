@@ -1,0 +1,169 @@
+% This file was created by matlab2tikz.
+%
+\documentclass[tikz]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{amsmath}
+
+\begin{document}
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+\definecolor{mycolor4}{rgb}{0.49400,0.18400,0.55600}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+every outer x axis line/.append style={white!15!black},
+every x tick label/.append style={font=\color{white!15!black}},
+every x tick/.append style={white!15!black},
+xmin=0,
+xmax=25,
+xtick={0,5,10,15,20,25},
+xlabel style={font=\color{white!15!black}},
+xlabel={Hour},
+every outer y axis line/.append style={white!15!black},
+every y tick label/.append style={font=\color{white!15!black}},
+every y tick/.append style={white!15!black},
+ymin=0,
+ymax=0.6,
+ytick={0,0.1,0.2,0.3,0.4,0.5,0.6},
+ylabel style={font=\color{white!15!black}},
+ylabel={$K_{Un}$},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={the unbalancing ratio},
+axis x line*=bottom,
+axis y line*=left,
+axis on top,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=mycolor1, line width=0.5pt]
+  table[row sep=crcr]{%
+1	0.125805824286847\\
+2	0.160974733929261\\
+3	0.163436034515789\\
+4	0.15050491542064\\
+5	0.158933036171341\\
+6	0.156181684493676\\
+7	0.112293158006486\\
+8	0.143101752801364\\
+9	0.247967138867869\\
+10	0.272529945070815\\
+11	0.383806581093702\\
+12	0.187444905461102\\
+13	0.119915957968864\\
+14	0.152142098220351\\
+15	0.119581300910694\\
+16	0.20523508353321\\
+17	0.254512379789918\\
+18	0.306757287254028\\
+19	0.572834180563738\\
+20	0.238260065589103\\
+21	0.343490265792873\\
+22	0.278541761845938\\
+23	0.33327563864253\\
+24	0.215086020080607\\
+};
+\addlegendentry{Base Case}
+
+\addplot [color=mycolor2, line width=0.5pt]
+  table[row sep=crcr]{%
+1	0.13282447531445\\
+2	0.164854579864284\\
+3	0.171088647642613\\
+4	0.157703197547643\\
+5	0.162415499855284\\
+6	0.163917390042924\\
+7	0.112406391966587\\
+8	0.164734308984273\\
+9	0.268658207399583\\
+10	0.307249053423923\\
+11	0.344844710287629\\
+12	0.216833940558302\\
+13	0.136193970485895\\
+14	0.151760905034256\\
+15	0.124788560581029\\
+16	0.202601867831281\\
+17	0.252799671254734\\
+18	0.278915112589596\\
+19	0.541994644925731\\
+20	0.227868041675452\\
+21	0.327050475236009\\
+22	0.284526211373122\\
+23	0.330496887683998\\
+24	0.230922352061002\\
+};
+\addlegendentry{SVC}
+
+\addplot [color=mycolor3, line width=0.5pt]
+  table[row sep=crcr]{%
+1	0.12873948322844\\
+2	0.158751697077326\\
+3	0.167021594730589\\
+4	0.153165570959363\\
+5	0.156981507257875\\
+6	0.159060347371865\\
+7	0.117871084346985\\
+8	0.144379169459018\\
+9	0.143905365680354\\
+10	0.142485841502457\\
+11	0.194204956336978\\
+12	0.13807638933463\\
+13	0.12163015877264\\
+14	0.146867218627434\\
+15	0.113436094699206\\
+16	0.194799726111678\\
+17	0.219637404611412\\
+18	0.265939029509147\\
+19	0.550190380886679\\
+20	0.220814359174775\\
+21	0.303627706780435\\
+22	0.212446674092546\\
+23	0.227119085360927\\
+24	0.211118854241952\\
+};
+\addlegendentry{UPC}
+
+\addplot [color=mycolor4, line width=0.5pt]
+  table[row sep=crcr]{%
+1	0.117723969321801\\
+2	0.156546946550599\\
+3	0.162055748632014\\
+4	0.1456629535981\\
+5	0.15180021736601\\
+6	0.153025507735767\\
+7	0.113737712376614\\
+8	0.0904716630242791\\
+9	0.0893555378236183\\
+10	0.0929412758641532\\
+11	0.115387810119164\\
+12	0.0969242575816112\\
+13	0.0990163282829822\\
+14	0.147705952759022\\
+15	0.114698367553917\\
+16	0.16588226158281\\
+17	0.152836439858659\\
+18	0.151006911480824\\
+19	0.393952648226688\\
+20	0.142477189694617\\
+21	0.220659394659051\\
+22	0.122569705757748\\
+23	0.127484480484485\\
+24	0.153404019891048\\
+};
+\addlegendentry{UPC-GA}
+
+\end{axis}
+\end{tikzpicture}%
+\end{document}
