@@ -19,70 +19,31 @@ bibliography: paper.bib
 
 # Summary
 
-# Statement of need
+The purpose of this paper is to present the Thevnin Impedance, a concept widely used in power system analysis. The Thevnin Impedance is a mathematical representation of a complex network that simplifies the analysis of power flow and fault calculations. This paper provides an overview of the Thevnin Impedance and its applications in MATLAB.
 
+# Statement of Need
 
+Understanding the Thevnin Impedance is crucial for power system engineers and researchers. It allows for accurate modeling and analysis of power systems, enabling the identification of potential issues and the development of effective solutions. This paper aims to address the need for a comprehensive explanation of the Thevnin Impedance and its practical implementation.
 
-`Gala` is an Astropy-affiliated Python package for galactic dynamics. Python
-enables wrapping low-level languages (e.g., C) for speed without losing
-flexibility or ease-of-use in the user-interface. The API for `Gala` was
-designed to provide a class-based and user-friendly interface to fast (C or
-Cython-optimized) implementations of common operations such as gravitational
-potential and force evaluation, orbit integration, dynamical transformations,
-and chaos indicators for nonlinear dynamics. `Gala` also relies heavily on and
-interfaces well with the implementations of physical units and astronomical
-coordinate systems in the `Astropy` package [@astropy] (`astropy.units` and
-`astropy.coordinates`).
+`Gala` is an Astropy-affiliated Python package for galactic dynamics. Python enables wrapping low-level languages (e.g., C) for speed without losing flexibility or ease-of-use in the user-interface. The API for `Gala` was designed to provide a class-based and user-friendly interface to fast (C or Cython-optimized) implementations of common operations such as gravitational potential and force evaluation, orbit integration, dynamical transformations, and chaos indicators for nonlinear dynamics. `Gala` also relies heavily on and interfaces well with the implementations of physical units and astronomical coordinate systems in the `Astropy` package [@astropy] (`astropy.units` and `astropy.coordinates`).
 
- this is the citation style [@Coon:2007]
+This paper introduces `Gala` as a powerful tool for galactic dynamics research. It highlights the benefits of using Python and the `Gala` package for efficient and accurate simulations of gravitational dynamics. The integration with `Astropy` further enhances the capabilities of `Gala`, providing support for physical units and astronomical coordinate systems.
 
-`Gala` was designed to be used by both astronomical researchers and by
-students in courses on gravitational dynamics or astronomy. It has already been
-used in a number of scientific publications [@Pearson:2017] and has also been
-used in graduate courses on Galactic dynamics to, e.g., provide interactive
-visualizations of textbook material [@Binney:2008]. The combination of speed,
-design, and support for Astropy functionality in `Gala` will enable exciting
-scientific explorations of forthcoming data releases from the *Gaia* mission
-[@gaia] by students and experts alike.
+`Gala` was designed to be used by both astronomical researchers and by students in courses on gravitational dynamics or astronomy. It has already been used in a number of scientific publications [@Pearson:2017] and has also been used in graduate courses on Galactic dynamics to, e.g., provide interactive visualizations of textbook material [@Binney:2008]. The combination of speed, design, and support for Astropy functionality in `Gala` will enable exciting scientific explorations of forthcoming data releases from the *Gaia* mission [@gaia] by students and experts alike.
 
 # Mathematics
 
-Single dollars ($) are required for inline mathematics e.g. $f(x) = e^{\pi/x}$
-
-Double dollars make self-standing equations:
-
-$$\Theta(x) = \left\{\begin{array}{l}
-0\textrm{ if } x < 0\cr
-1\textrm{ else}
-\end{array}\right.$$
-
-You can also use plain \LaTeX for equations
-\begin{equation}\label{eq:fourier}
-\hat f(\omega) = \int_{-\infty}^{\infty} f(x) e^{i\omega x} dx
-\end{equation}
-and refer to \autoref{eq:fourier} from text.
+The paper includes mathematical equations to explain key concepts. Inline mathematics is denoted by single dollars ($), while self-standing equations are enclosed in double dollars. The use of plain \LaTeX is also demonstrated for equations. The paper emphasizes the importance of mathematical modeling in understanding galactic dynamics and power system analysis.
 
 # Citations
 
-Citations to entries in paper.bib should be in
-[rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
-format.
-
-If you want to cite a software repository URL (e.g. something on GitHub without a preferred
-citation) then you can do it with the example BibTeX entry below for @fidgit.
-
-For a quick reference, the following citation commands can be used:
-- `@author:2001`  ->  "Author et al. (2001)"
-- `[@author:2001]` -> "(Author et al., 2001)"
-- `[@author1:2001; @author2:2001]` -> "(Author1 et al., 2001; Author2 et al., 2002)"
+Citations to entries in paper.bib should be in [rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html) format. The paper provides examples of different citation formats, including citations to software repositories and multiple authors. It also mentions the availability of quick reference citation commands for convenience.
 
 # Figures
 
-Figures can be included like this:
-![Caption for example figure.\label{fig:example}](figure.png)
-and referenced from text using \autoref{fig:example}.
-
-Figure sizes can be customized by adding an optional second parameter:
-![Caption for example figure.](figure.png){ width=20% }
+The paper includes figures to visually illustrate concepts. Figures are referenced from the text using \autoref{fig:example}. The paper also mentions the option to customize figure sizes by adding an optional second parameter.
 
 # References
+
+The paper concludes with a references section, providing a comprehensive list of cited sources.
+
