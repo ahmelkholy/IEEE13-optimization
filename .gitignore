@@ -12,7 +12,7 @@
 *.cb2
 .*.lb
 
-/Tex/
+/TEX/
 
 ## Intermediate documents:
 *.dvi
