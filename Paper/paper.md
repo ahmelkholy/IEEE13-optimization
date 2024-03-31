@@ -1,5 +1,5 @@
 ---
-title: 'Thevnin  Impedance '
+title: ''
 tags:
   - MATLAB
   - Power System Analysis
@@ -19,7 +19,8 @@ bibliography: paper.bib
 
 # Summary
 
-The purpose of this paper is to present the Thevnin Impedance, a concept widely used in power system analysis. The Thevnin Impedance is a mathematical representation of a complex network that simplifies the analysis of power flow and fault calculations. This paper provides an overview of the Thevnin Impedance and its applications in MATLAB.
+
+
 
 # Statement of Need
 
