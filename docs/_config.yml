@@ -9,7 +9,7 @@ description: >
 version:          1.0
 gitbook_version:  3.2.3
 
-baseurl:          '/DStoolkit'
+baseurl:          '/ieee13optimization'
 rss:              RSS
 
 # bootstrap: use the remote theme for the site itself
