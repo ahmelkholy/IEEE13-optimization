@@ -1,0 +1,70 @@
+# Configurations
+title:            DStoolkit Documentation
+longtitle:        this is a Documentation for DStoolkit project 
+author:           Ahmed M. Elkholy 
+email:            ahm_elkholy@outlook.com 
+description: >
+  this is a Documentation for DStoolkit project, this project is a collection of tools to study and analyze the distribution systems,
+
+version:          1.0
+gitbook_version:  3.2.3
+
+baseurl:          '/DStoolkit'
+rss:              RSS
+
+# bootstrap: use the remote theme for the site itself
+remote_theme: sighingnow/jekyll-gitbook
+
+host: 127.0.0.2
+# the preview server used. Leave as is.
+
+port: 4000
+
+toc:
+  enabled: true
+  h_min: 1
+  h_max: 1
+
+# customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
+favicon_path:     /assets/gitbook/images/favicon.ico
+
+# markdown render engine.
+markdown:         kramdown
+kramdown:
+  auto_ids:               true
+  input:                  GFM
+  math_engine:            mathjax
+  smart_quotes:           lsquo,rsquo,ldquo,rdquo
+  toc_levels:             1..6
+  syntax_highlighter:     rouge
+  syntax_highlighter_opts:
+    guess_lang:           true
+
+syntax_highlighter_style: colorful
+
+markdown_ext:             markdown,mkdown,mkdn,mkd,md
+
+# Permalinks
+permalink:                /:categories/:year-:month-:day-:title:output_ext
+
+# Disqus comments
+# disqushandler:            sighingnow
+
+exclude:
+  - _drafts
+
+collections:
+  pages:
+    output: true
+    permalink: /:collection/:path/
+
+page_width: 800px
+
+destination:      ./_site
+incremental:      false
+regenerate:       true
+
+plugins:
+  - jekyll-feed
+  - jekyll-readme-index
+  - jemoji
