@@ -1,5 +1,5 @@
 # Configurations
-title:            IEEE 13 Bus Optimization  
+title:            IEEE 13 bus optimization 
 longtitle:        this is a Documentation for DStoolkit project 
 author:           Ahmed M. Elkholy 
 email:            ahm_elkholy@outlook.com 
@@ -9,7 +9,7 @@ description: >
 version:          1.0
 gitbook_version:  3.2.3
 
-baseurl:          '/IEEE13optimization'
+baseurl:          '/optieee13bus'
 rss:              RSS
 
 # bootstrap: use the remote theme for the site itself
