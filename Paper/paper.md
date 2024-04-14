@@ -24,7 +24,6 @@ bibliography: paper.bib
 
 # Statement of Need
 
-not imp
 Understanding the Thevnin Impedance is crucial for power system engineers and researchers. It allows for accurate modeling and analysis of power systems, enabling the identification of potential issues and the development of effective solutions. This paper aims to address the need for a comprehensive explanation of the Thevnin Impedance and its practical implementation.
 
 `Gala` is an Astropy-affiliated Python package for galactic dynamics. Python enables wrapping low-level languages (e.g., C) for speed without losing flexibility or ease-of-use in the user-interface. The API for `Gala` was designed to provide a class-based and user-friendly interface to fast (C or Cython-optimized) implementations of common operations such as gravitational potential and force evaluation, orbit integration, dynamical transformations, and chaos indicators for nonlinear dynamics. `Gala` also relies heavily on and interfaces well with the implementations of physical units and astronomical coordinate systems in the `Astropy` package [@astropy] (`astropy.units` and `astropy.coordinates`).
